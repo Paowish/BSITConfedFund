@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #334155;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ========== PUBLIC HEADER ========== */
+.public-header {
+    background: var(--theme-primary, #1a3c5e);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.public-header .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.public-header .logo-area img {
+    height: 42px;
+    width: auto;
+    background: white;
+    border-radius: 50%;
+    padding: 3px;
+    object-fit: contain;
+}
+
+.public-header .logo-area span {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.public-header .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.public-header .nav-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.public-header .nav-links a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ========== MAIN CONTENT ========== */
+.public-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ========== CARDS ========== */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.card h2, .card h3 {
+    color: #1e293b;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* ========== FILTERS ========== */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: end;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.filters label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.filters select {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f8fafc;
+    min-width: 200px;
+}
+
+.filters button {
+    background: var(--theme-primary, #1a3c5e);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.filters button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* ========== TABLES ========== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0;
+}
+
+th {
+    background: #f8fafc;
+    color: #475569;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+    border-top: 1px solid #e2e8f0;
+}
+th:first-child { border-top-left-radius: 8px; border-left: 1px solid #e2e8f0; }
+th:last-child { border-top-right-radius: 8px; border-right: 1px solid #e2e8f0; }
+
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    border-left: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #334155;
+}
+td:last-child { border-right: 1px solid #e2e8f0; }
+tr:last-child td:first-child { border-bottom-left-radius: 8px; }
+tr:last-child td:last-child { border-bottom-right-radius: 8px; }
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+/* ========== FOOTER ========== */
+.public-footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    font-size: 13.5px;
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+}
